@@ -2,14 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Login extends StatefulWidget {
-  Login({super.key});
+class LogInScreen extends StatefulWidget {
+  LogInScreen({super.key});
 
   @override
-  State<Login> createState() => _LoginState();
+  State<LogInScreen> createState() => _LogInScreenState();
 }
 
-class _LoginState extends State<Login> {
+class _LogInScreenState extends State<LogInScreen> {
   bool isPasswordVisible = false;
 
   @override

@@ -5,6 +5,7 @@ import 'package:shopino/feature/product/productScreen.dart';
 import 'package:shopino/feature/welcome/widget/card1.dart';
 import 'package:shopino/feature/welcome/widget/card2.dart';
 import 'package:shopino/feature/welcome/widget/card3.dart';
+import 'package:shopino/routues/routes.dart';
 
 class Welcomescreen extends StatelessWidget {
   const Welcomescreen({super.key});
@@ -74,10 +75,7 @@ class FrontWidget extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 26),
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Productscreen()),
-                    );
+                    Navigator.pushNamed(context, Routes.product);
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.black,
@@ -109,10 +107,7 @@ class FrontWidget extends StatelessWidget {
                   style: ButtonStyle(
                     tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   ),
-                  onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Login()),
-                  ),
+                  onPressed: () => Navigator.pushNamed(context, Routes.login),
                   child: Text(
                     'LogIn',
                     style: GoogleFonts.exo2(
