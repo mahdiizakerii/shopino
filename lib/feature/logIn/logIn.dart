@@ -28,7 +28,7 @@ class _LoginState extends State<Login> {
         child: SafeArea(
           child: Center(
             child: SingleChildScrollView(
-              padding: EdgeInsets.all(70),
+              padding: EdgeInsets.all(50),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.stretch,

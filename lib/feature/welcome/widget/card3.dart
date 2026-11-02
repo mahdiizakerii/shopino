@@ -15,7 +15,7 @@ class Card3 extends StatelessWidget {
       padding: const EdgeInsets.only(left: 8),
       child: Container(
         width: screenWidth * 0.499,
-        height: screenHeight * 0.7,
+        height: screenHeight * 1.1,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(40),

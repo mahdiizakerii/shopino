@@ -32,11 +32,11 @@ class Card1 extends StatelessWidget {
               left: 0,
               bottom: 0,
               child: Image.asset("assets/images/pic1.png"),
-              height: scrreenHeight * 0.30,
+              height: scrreenHeight * 0.22,
               width: screenWidth * 0.50,
             ),
             Positioned(
-              top: 0,
+              top: 10,
               right: 24,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -44,15 +44,15 @@ class Card1 extends StatelessWidget {
                   Text(
                     "all kids fashion",
                     style: GoogleFonts.exo2(
-                      fontSize: 30,
+                      fontSize: 26,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   SizedBox(
-                    width: screenWidth * 0.30,
+                    width: screenWidth * 0.50,
                     child: Text(
                       "designed to spark joy creativity in every child, with a focus on comfort quality.",
-                      style: GoogleFonts.exo2(fontSize: 18),
+                      style: GoogleFonts.exo2(fontSize: 14),
                     ),
                   ),
                 ],

@@ -53,24 +53,25 @@ class FrontWidget extends StatelessWidget {
         ),
         child: Column(
           children: [
-            SizedBox(height: 28),
+            SizedBox(height: 30),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 32),
+              padding: const EdgeInsets.symmetric(horizontal: 30),
               child: Text(
                 textAlign: TextAlign.center,
                 "get ready to dreas your little ones in fashion forward outfits",
                 style: GoogleFonts.exo2(
-                  fontSize: 30,
-                  color: Colors.black,
+                  fontSize: 28,
+                  color: Colors.black87,
                   fontWeight: FontWeight.bold,
                 ),
               ),
             ),
             SizedBox(height: 8),
             SizedBox(
-              width: screenWidth,
+              width: double.infinity,
+              height: screenWidth * 0.150,
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8),
+                padding: const EdgeInsets.symmetric(horizontal: 26),
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(

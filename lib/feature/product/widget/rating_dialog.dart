@@ -10,15 +10,21 @@ class RatingDilaog extends StatefulWidget {
 }
 
 class _RatingDilaogState extends State<RatingDilaog> {
-  int selectedRating = 0;
+  double selectedRating = 0;
   @override
   Widget build(BuildContext context) {
+    final displaydRating = selectedRating == 0
+        ? widget.rating
+        : selectedRating.toDouble();
     return AlertDialog(
       title: Text('Rate Us', textAlign: TextAlign.center),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(widget.rating.toString(), style: GoogleFonts.exo2(fontSize: 28)),
+          Text(
+            displaydRating.toStringAsFixed(1),
+            style: GoogleFonts.exo2(fontSize: 28),
+          ),
           SizedBox(height: 8),
           Row(
             mainAxisSize: MainAxisSize.min,
